@@ -9,8 +9,7 @@ Implemented following:
 > Streamfunction and Velocity Potential for Limited and Irregular Domains.
 > Monthly Weather Review, 3384-3394.
 
-# 1. To solve for streamfunction (psi) and velocity potential (chi) from
-u- and v- winds, on a uniform grid (uniform dx and dy everywhere):
+# 1. To solve for streamfunction (psi) and velocity potential (chi) from u- and v- winds, on a uniform grid (uniform dx and dy everywhere):
 
 u and v are given in even grid (n x m).
 
@@ -67,8 +66,7 @@ Add the regularization term:
     J = (uhat - u)**2 + (vhat - v)**2 + lambda(chi**2 + psi**2)
 
 
-# 2. To solve for streamfunction and velocity potential from u- and v- winds
-on irregular grid (e.g. mercator):
+# 2. To solve for streamfunction and velocity potential from u- and v- winds on irregular grid (e.g. mercator):
 
 Use similar definition of cost function and gradients, except that the computation
 of component winds and derivatives are performed on steps for NE, NW, SE, SW
